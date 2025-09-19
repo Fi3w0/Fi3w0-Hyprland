@@ -1,5 +1,9 @@
 # Fi3w0-Hyprland
 
+![Fi3w0-Hyprland Banner](assets/preview.png)
+
+
+
 This is **my personal Arch Linux + Hyprland configuration**.  
 The main purpose of this repository is to **backup my system**, because honestly, I’m like a monkey with an AWP in space when it comes to making thing work without errors.
 
