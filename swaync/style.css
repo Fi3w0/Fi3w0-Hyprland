@@ -1,0 +1,283 @@
+/* swaync config for Hyprland - light purple theme */
+
+/* Direct color palette (no SCSS variables, pure CSS) */
+:root {
+  --text: #d8b4f8;
+  --subtext0: #cba6f7;
+  --background: #1e1b29;
+  --foreground: #e0c3fc;
+  --color7: #caa0ff;
+  --color10: #e9d5ff;
+  --color11: #d0a2ff;
+  --color13: #b084f7;
+}
+
+* {
+  all: unset;
+  font-size: 14px;
+  font-family: "Ubuntu Nerd Font";
+  transition: 200ms;
+}
+
+.notification-row {
+  outline: none;
+}
+
+.notification-row .notification-background {
+  border-radius: 10px;
+  margin: 10px;
+  color: var(--text);
+  padding: 0;
+}
+
+.notification-row .notification-background .close-button {
+  margin: 5px;
+  padding: 2px;
+  border-radius: 6.3px;
+  color: var(--background);
+  background-color: rgba(224, 195, 252, 0.2);
+  transition: background 0.15s ease-in-out;
+}
+
+.notification-row .notification-background .close-button:hover,
+.notification-row .notification-background .close-button:active {
+  background-color: rgba(224, 195, 252, 0.5);
+  color: var(--background);
+}
+
+.notification {
+  padding: 5px 7px;
+  border-radius: 10px;
+  border: 1px solid rgba(224, 195, 252, 0.2);
+  background-color: rgba(30, 27, 41, 0.7);
+}
+
+.notification .notification-content {
+  margin: 5px;
+  background-color: transparent;
+}
+
+.notification .notification-content .image {
+  min-width: 48px;
+  min-height: 48px;
+  border-radius: 7px;
+  margin-right: 7px;
+  transform-origin: top;
+}
+
+.notification .notification-content .app-icon {
+  margin-bottom: -2px;
+  margin-right: 5px;
+}
+
+.notification .notification-content .summary {
+  color: var(--text);
+  margin-bottom: 5px;
+}
+
+.notification .notification-content .time {
+  color: rgba(216, 180, 248, 0.8);
+  font-size: 10px;
+}
+
+.notification .notification-content .body {
+  color: rgba(216, 180, 248, 0.7);
+  font-size: 12px;
+}
+
+.notification .notification-action {
+  border-radius: 7px;
+  color: var(--text);
+  background-color: rgba(224, 195, 252, 0.1);
+  margin: 7px;
+  padding: 4px;
+  transition: background 0.15s ease-in-out;
+}
+
+.notification .notification-action:hover,
+.notification .notification-action:active {
+  background-color: rgba(224, 195, 252, 0.3);
+  color: var(--text);
+}
+
+.notification .notification-default-action .notification-content .text-box .time {
+  font-size: 10px;
+}
+
+.notification .notification-default-action .notification-content progressbar {
+  margin-top: 4px;
+  background-color: var(--color7);
+}
+
+.notification .notification-default-action .notification-content .body-image {
+  margin-top: 4px;
+  background-color: white;
+  border-radius: 7px;
+}
+
+.notification .notification-default-action .notification-content .inline-reply {
+  margin-top: 4px;
+}
+
+.notification .notification-default-action .notification-content .inline-reply .inline-reply-entry {
+  background: rgba(224, 195, 252, 0.05);
+  color: rgba(216, 180, 248, 0.8);
+  caret-color: var(--text);
+  border: 1px solid rgba(224, 195, 252, 0.1);
+  border-radius: 7px;
+}
+
+.notification .notification-default-action .notification-content .inline-reply .inline-reply-button {
+  margin-left: 4px;
+  background: rgba(224, 195, 252, 0.2);
+  border: 1px solid rgba(224, 195, 252, 0.1);
+  border-radius: 7px;
+  color: var(--text);
+  transition: background 0.15s ease-in-out;
+}
+
+.notification .notification-default-action .notification-content .inline-reply .inline-reply-button:disabled {
+  background: rgba(224, 195, 252, 0.05);
+  color: rgba(216, 180, 248, 0.5);
+}
+
+.notification .notification-default-action .notification-content .inline-reply .inline-reply-button:hover {
+  background-color: rgba(224, 195, 252, 0.3);
+}
+
+.notification.critical {
+  border: 1px solid rgba(176, 132, 247, 0.1);
+  background-image: linear-gradient(
+    135deg,
+    rgba(176, 132, 247, 0.7) -200%,
+    rgba(30, 27, 41, 0.7) 70%
+  );
+}
+
+.notification.critical .notification-default-action .notification-content progressbar {
+  background-color: var(--color10);
+}
+
+.control-center {
+  border-radius: 10px;
+  margin: 0px;
+  background-color: rgba(30, 27, 41, 0.7);
+  color: var(--text);
+  padding: 10px;
+  border: 1px solid rgba(224, 195, 252, 0.2);
+}
+
+.control-center .notification-row .notification-background {
+  border-radius: 10px;
+  color: var(--text);
+  background-color: var(--background);
+  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.2);
+  margin-top: 5px;
+}
+
+.control-center .notification-row .notification-background .notification {
+  padding: 7px;
+  border-radius: 10px;
+  background-color: rgba(224, 195, 252, 0.05);
+  border: 1px solid rgba(224, 195, 252, 0.1);
+}
+
+.control-center .notification-row .notification-background .notification.critical {
+  background-image: linear-gradient(
+    135deg,
+    rgba(176, 132, 247, 0.3) -200%,
+    rgba(224, 195, 252, 0.05) 70%
+  );
+}
+
+.control-center .notification-row .notification-background .notification .notification-action {
+  border-radius: 7px;
+  color: var(--foreground);
+  background-color: rgba(224, 195, 252, 0.1);
+  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.2);
+  margin: 7px;
+}
+
+.control-center .notification-row .notification-background .notification .notification-action:hover,
+.control-center .notification-row .notification-background .notification .notification-action:active {
+  background-color: rgba(224, 195, 252, 0.5);
+  color: var(--background);
+}
+
+.control-center .notification-row .notification-background:hover,
+.control-center .notification-row .notification-background:active {
+  box-shadow: inset 0 0 0 1px rgba(17, 17, 17, 0.2);
+  color: var(--text);
+}
+
+.control-center .notification-row .notification-background:hover .notification,
+.control-center .notification-row .notification-background:active .notification {
+  background-color: rgba(224, 195, 252, 0.1);
+  border: 1px solid rgba(224, 195, 252, 0.2);
+}
+
+.widget-title > label {
+  color: var(--text);
+  font-size: 1em;
+}
+
+.widget-title button {
+  border-radius: 10px;
+  color: var(--text);
+  background-color: rgba(224, 195, 252, 0.05);
+  border: 1px solid rgba(224, 195, 252, 0.1);
+  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.2);
+  padding: 5px 10px;
+}
+
+.widget-title button:hover {
+  background-color: rgba(224, 195, 252, 0.1);
+}
+
+.widget-title button:active {
+  background-color: var(--color11);
+  color: var(--background);
+}
+
+.widget-mpris .widget-mpris-player {
+  margin: 5px;
+  min-height: 100px;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.widget-mpris .widget-mpris-player .mpris-background {
+  filter: blur(10px) brightness(0.4);
+}
+
+.widget-mpris .widget-mpris-player .widget-mpris-album-art {
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  min-width: 80px;
+  min-height: 80px;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+.widget-mpris .widget-mpris-player .widget-mpris-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.widget-mpris .widget-mpris-player .widget-mpris-subtitle {
+  font-size: 0.8rem;
+  margin-right: 10px;
+}
+
+.widget-mpris .widget-mpris-player button {
+  background-color: rgba(30, 27, 41, 0.5);
+  padding: 5px;
+  border-radius: 7px;
+  margin-bottom: 5px;
+}
+
+.widget-mpris .widget-mpris-player button:hover {
+  background-color: rgba(30, 27, 41, 0.8);
+}
