@@ -62,14 +62,26 @@ Here’s a quick glance at the main applications I use in this setup:
 │   💻 Cmatrix                  │
 │   🔧 Pavucontrol              │
 │   📈 Htop                     │
+│   🔒 Hyprlock                 │
+│   🖼️ imv                      │
+│   ✍️ Kate                     │
+│   📰 SwayNC                   │
+
+
+
+
+
+
 
 
 (How does it look)
 
 ![Hyprland Desktop](assets/arch.png)
+![Hyprland Desktop](assets/notification.png)
 
-(there is no Fastfetch config but you can look it here this is the one I use [Fastfetch cli](https://github.com/fastfetch-cli/fastfetch))
+(There is no Fastfetch config but you can look it here this is the one I use [Fastfetch cli](https://github.com/fastfetch-cli/fastfetch))
 
+(SwayNC is working 50/50 so you may not use it if you don't care that much about Notification centre)
 
 License
 
