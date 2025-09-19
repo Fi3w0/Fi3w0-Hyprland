@@ -17,19 +17,33 @@ You’re free to browse or experiment with these dotfiles, but I don’t recomme
 ---
 
 ## Usage
-Clone the repo if you really want, but carefully:  
+
+Clone this repository:
+
 ```bash
 git clone https://github.com/fi3w0/Fi3w0-Hyprland.git
 
-Copy files to your configuration folder (example):
+Then copy the configuration files to your user config directory (~/.config/) so they are picked up by your system:
 
-cp -r Fi3w0-Hyprland/* ~/.config/
+cp -r Fi3w0-Hyprland/hyprland ~/.config/
+cp -r Fi3w0-Hyprland/waybar ~/.config/
+cp -r Fi3w0-Hyprland/rofi ~/.config/
+cp -r Fi3w0-Hyprland/fish ~/.config/
+
+For wallpapers and other assets, copy them to your Pictures or config folder:
+
+mkdir -p ~/Pictures
+cp -r Fi3w0-Hyprland/wallpapers ~/Pictures/
+cp -r Fi3w0-Hyprland/assets ~/.config/
+
+    ⚠️ Important: These configuration files are specifically tailored for my system and setup.
+    You may need to adjust paths, keybindings, or other settings to make them work properly on your own system.
 ```
-AND DO NOT FOLDER TO CHANGE CONFIG FILES LOCATIONS SO ALL WORKS FINE RIGHT NOW THERE IS MY LOCATIONS BUT YOU NEED TO CHANGE IT.
+
+
 
 Here’s a quick glance at the main applications I use in this setup:
 
-┌───────────────────────────────┐
 │   🪟 Hyprland WM              │
 │   📊 Waybar                   │
 │   🔍 Rofi                     │
@@ -44,7 +58,6 @@ Here’s a quick glance at the main applications I use in this setup:
 │   💻 Cmatrix                  │
 │   🔧 Pavucontrol              │
 │   📈 Htop                     │
-└───────────────────────────────┘
 
 
 (How does it look)
@@ -57,3 +70,5 @@ Here’s a quick glance at the main applications I use in this setup:
 License
 
 This repository is for personal use. You may explore or adapt it at your own risk.
+
+---
