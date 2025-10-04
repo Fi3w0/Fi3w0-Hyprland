@@ -21,6 +21,7 @@
         "tray",
 		"hyprland/language",
         "cpu_text",
+  
         "cpu",
         "memory",
         "battery",
@@ -37,6 +38,7 @@
     },
 
     "hyprland/workspaces": {
+     
         "disable-scroll": true,
         "all-outputs": true,
         "tooltip": false
@@ -53,16 +55,18 @@
     },
 
     "cpu": {
-        "format": "cpu {usage}%",
+        "format": "  {usage}%",
         "interval": 2,
 
         "states": {
             "critical": 90
-        }
+        },
+        "tooltip": true,
+        "format-tooltip": "CPU: {usage}%\\nCores: {usage_per_core}"
     },
 
     "memory": {
-        "format": "mem {percentage}%",
+        "format": "  {used:0.1f}G / {total:0.1f}G",
         "interval": 2,
 
         "states": {
@@ -71,7 +75,10 @@
     },
 
     "battery": {
-        "format": "bat {capacity}%",
+        "format": "{icon}  {capacity}%",
+        "format-charging": "  {capacity}%",
+        "format-full": "  {capacity}%",
+        "format-icons": ["", "", "", "", ""],
         "interval": 5,
         "states": {
             "warning": 20,
@@ -81,8 +88,9 @@
     },
 
     "network": {
-        "format-wifi" : "wifi {bandwidthDownBits}",
-        "format-ethernet": "enth {bandwidthDownBits}",
+        "format-wifi" : "   {bandwidthDownBits}",
+   
+        "format-ethernet": "   {bandwidthDownBits}",
         "format-disconnected" : "no network",
         "interval": 5,
         "tooltip": false
@@ -91,10 +99,11 @@
     "pulseaudio": {
         "scroll-step": 5,
         "max-volume": 150,
-        "format": "vol {volume}%",
-        "format-bluetooth": "vol {volume}%",
+        "format": "   {volume}%",
+        "format-bluetooth": "   {volume}%",
         "nospacing": 1,
-        "on-click": "pwvucontrol",
+        
+        "on-click": "GTK_THEME=Adwaita:dark pavucontrol",
         "tooltip": false
     },
 
@@ -107,5 +116,5 @@
         "on-click": "control",
         "on-click-right": "killall control",
         "tooltip": false
-    },
+    }
 }

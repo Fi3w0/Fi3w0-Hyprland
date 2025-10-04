@@ -91,7 +91,12 @@ tooltip label {
     min-width: 80px;
 }
 
-#cpu,
+/* Reduced min-width for CPU */
+#cpu {
+    min-width: 40px;
+}
+
+/* Kept min-width for other modules */
 #memory,
 #battery,
 #pulseaudio {
