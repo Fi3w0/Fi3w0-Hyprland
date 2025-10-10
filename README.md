@@ -77,6 +77,7 @@ Here’s a quick glance at the main applications I use in this setup:
 (How does it look)
 
 ![Hyprland Desktop](assets/arch.png)
+![Hyprland Desktop](assets/photo2.png)
 ![Hyprland Desktop](assets/notification.png)
 
 (There is no Fastfetch config but you can look it here this is the one I use [Fastfetch cli](https://github.com/fastfetch-cli/fastfetch))
