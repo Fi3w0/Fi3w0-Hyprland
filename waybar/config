@@ -89,7 +89,7 @@
     "custom/cpu_temp": {
         "exec": "exec ~/.config/waybar/scripts/cpu_temp.sh",
         "interval": 5,
-        "format": "{text}°C",
+        "format": "{text}",
         "tooltip": "CPU temperature",
         "on-click": "kitty -e gtop"
     },
