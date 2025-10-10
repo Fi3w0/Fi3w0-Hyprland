@@ -19,12 +19,11 @@
 
     "modules-right": [
         "tray",
-		"hyprland/language",
-        "cpu_text",
-  
+        "hyprland/language",
         "cpu",
         "memory",
         "battery",
+        "custom/cpu_temp",
         "network",
         "pulseaudio",
 		"custom/control"
@@ -85,6 +84,14 @@
             "critical": 10
         },
         "tooltip": false
+    },
+
+    "custom/cpu_temp": {
+        "exec": "exec ~/.config/waybar/scripts/cpu_temp.sh",
+        "interval": 5,
+        "format": "{text}°C",
+        "tooltip": "CPU temperature",
+        "on-click": "kitty -e gtop"
     },
 
     "network": {
