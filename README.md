@@ -5,7 +5,7 @@
 
 
 This is **my personal Arch Linux + Hyprland configuration**.  
-The main purpose of this repository is to **backup my system**, because honestly, I’m like a monkey with an AWP in space when it comes to making thing work without errors.
+The main purpose of this repository is to **backup my system**, because honestly, I’m still learning to use Linux.
 
 ⚠️ **Disclaimer:**  
 You’re free to browse or experiment with these dotfiles, but I don’t recommend using them on your system directly—they’re tailored to my setup and may break yours.
@@ -17,6 +17,7 @@ You’re free to browse or experiment with these dotfiles, but I don’t recomme
 - Waybar, Rofi, Fish shell setups
 - Wallpapers and assets
 - Random experimental tweaks
+- Some themes scripts for Nvim or Waybar
 
 ---
 
@@ -33,11 +34,13 @@ cp -r Fi3w0-Hyprland/hyprland ~/.config/
 cp -r Fi3w0-Hyprland/waybar ~/.config/
 cp -r Fi3w0-Hyprland/rofi ~/.config/
 cp -r Fi3w0-Hyprland/fish ~/.config/
+cp -r Fi3w0-Hyprland/nvim ~/.config/
+cp -r Fi3w0-Hyprland/Wallpapers ~/home/
+cp -r Fi3w0-Hyprland/.icons ~/home/
 
-For wallpapers and other assets, copy them to your Pictures or config folder:
+For assets, copy them to your Pictures or config folder (or just delete):
 
 mkdir -p ~/Pictures
-cp -r Fi3w0-Hyprland/wallpapers ~/Pictures/
 cp -r Fi3w0-Hyprland/assets ~/.config/
 
     ⚠️ Important: These configuration files are specifically tailored for my system and setup.
@@ -50,22 +53,24 @@ Here’s a quick glance at the main applications I use in this setup:
 
 │   🪟 Hyprland WM              │
 │   📊 Waybar                   │
+│   📊 Htop                     │
+│   📊 Gtop                     │
+│   📊 Fastfetch                │
 │   🔍 Rofi                     │
 │   🐟 Fish Shell               │
-│   🖥️ Kitty Terminal           │
+│   🐟 Kitty Terminal           │
 │   🌐 Firefox                  │
-│   ⚡ Fastfetch                │
-│   📁 Dolphin / nnn            │
-│   📦 Flatpak / Pacman         │
-│   🔊 Pulseaudio               │
+│   📁 Nautilus                 │
+│   📁 Flatpak / Pacman         │
+│   🎶 Pulseaudio               │
 │   🎶 Cava                     │
 │   💻 Cmatrix                  │
 │   🔧 Pavucontrol              │
-│   📈 Htop                     │
 │   🔒 Hyprlock                 │
 │   🖼️ imv                      │
-│   ✍️ Kate                     │
+│   ✍️ Neovim                   │
 │   📰 SwayNC                   │
+
 
 
 
@@ -80,9 +85,9 @@ Here’s a quick glance at the main applications I use in this setup:
 ![Hyprland Desktop](assets/photo2.png)
 ![Hyprland Desktop](assets/notification.png)
 
-(There is no Fastfetch config but you can look it here this is the one I use [Fastfetch cli](https://github.com/fastfetch-cli/fastfetch))
+- (There is no Fastfetch config but you can look it here this is the one I use [Fastfetch cli](https://github.com/fastfetch-cli/fastfetch))
 
-(SwayNC is working 50/50 so you may not use it if you don't care that much about Notification centre)
+- (SwayNC is working 50/50 so you may not use it if you don't care that much about Notification centre)
 
 License
 
