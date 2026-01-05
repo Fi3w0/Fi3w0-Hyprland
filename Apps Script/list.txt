@@ -1,0 +1,103 @@
+# --- Core system ---
+base
+base-devel
+linux
+linux-firmware
+amd-ucode
+grub
+efibootmgr
+acpi
+zram-generator
+
+# --- System utilities ---
+brightnessctl
+dmidecode
+smartmontools
+wget
+htop
+fastfetch
+powerline-fonts
+pacman-contrib
+pkgfile
+unzip
+zip
+7zip
+
+# --- Desktop environment (Hyprland) ---
+hyprland
+hyprlock
+hyprpaper
+waybar
+swaync
+uwsm
+qt5-wayland
+qt6-wayland
+xdg-desktop-portal-gtk
+xdg-desktop-portal-hyprland
+xdg-utils
+nwg-look
+rose-pine-cursor
+
+# --- Display & input ---
+xf86-video-amdgpu
+xf86-video-ati
+vulkan-radeon
+
+# --- Network ---
+network-manager-applet
+wireplumber
+bluedevil
+bluez
+blueman
+wireless_tools
+wpa_supplicant
+iwd
+inetutils
+openssh
+
+# --- Audio ---
+pulseaudio
+pulseaudio-bluetooth
+pavucontrol
+
+# --- Development ---
+git
+go
+rustup
+docker
+docker-compose
+yay
+yay-debug
+
+# --- CLI tools ---
+fish
+nano
+neovim
+jq
+cmatrix
+cava
+gtop
+fastfetch
+
+# --- Apps / GUI tools ---
+firefox
+thunar
+nautilus
+ark
+smplayer
+imv
+spotify-launcher
+ani-cli
+anicli-ru
+
+# --- Hyprland helpers ---
+rofi
+slurp
+grim
+kitty
+sddm
+
+# --- Fonts ---
+ttf-dejavu
+ttf-jetbrains-mono-nerd
+
