@@ -60,7 +60,7 @@ Here’s a quick glance at the main applications I use in this setup:
 │   🐟 Fish Shell               │
 │   🐟 Kitty Terminal           │
 │   🌐 Firefox                  │
-│   📁 Nautilus                 │
+│   📁 Nautilus / Ranger        │
 │   📁 Flatpak / Pacman         │
 │   🎶 Pulseaudio               │
 │   🎶 Cava                     │
@@ -70,6 +70,7 @@ Here’s a quick glance at the main applications I use in this setup:
 │   🖼️ imv                      │
 │   ✍️ Neovim                   │
 │   📰 SwayNC                   │
+│   🪟 Hyprpaper / swww         │
 
 
 
