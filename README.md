@@ -18,7 +18,7 @@ My personal Hyprland dotfiles — built from scratch on bare Arch Linux with zer
 | **Machine** | ThinkPad T14 Gen 1 — AMD Ryzen 5 PRO 4650U |
 | **Shell** | Fish 4.5.0 |
 | **Terminal** | Kitty 0.45.0 |
-| **Uptime** | 170 days and counting |
+| **Uptime** | 169 days and counting |
 
 ---
 
@@ -85,55 +85,7 @@ For wallpapers:
 cp -r wallpapers ~/Pictures/
 ```
 
-<<<<<<< HEAD
-
-Here’s a quick glance at the main applications I use in this setup:
-
-│   🪟 Hyprland WM              │
-│   📊 Waybar                   │
-│   📊 Htop                     │
-│   📊 Gtop                     │
-│   📊 Fastfetch                │
-│   🔍 Rofi                     │
-│   🐟 Fish Shell               │
-│   🐟 Kitty Terminal           │
-│   🌐 Firefox                  │
-│   📁 Nautilus / Ranger        │
-│   📁 Flatpak / Pacman         │
-│   🎶 Pulseaudio               │
-│   🎶 Cava                     │
-│   💻 Cmatrix                  │
-│   🔧 Pavucontrol              │
-│   🔒 Hyprlock                 │
-│   🖼️ imv                      │
-│   ✍️ Neovim                   │
-│   📰 SwayNC                   │
-│   🪟 Hyprpaper / swww         │
-
-
-
-
-
-
-
-
-
-(How does it look)
-
-![Hyprland Desktop](assets/arch.png)
-![Hyprland Desktop](assets/photo2.png)
-![Hyprland Desktop](assets/notification.png)
-
-- (There is no Fastfetch config but you can look it here this is the one I use [Fastfetch cli](https://github.com/fastfetch-cli/fastfetch))
-
-- (SwayNC is working 50/50 so you may not use it if you don't care that much about Notification centre)
-
-License
-
-This repository is for personal use. You may explore or adapt it at your own risk.
-=======
 > **Note:** These configs are tailored to my hardware and workflow. You'll likely need to adjust monitor settings, keybindings, and paths. Read through `hypr/hyprland.conf` before applying anything.
->>>>>>> 8010a9b (Updated README.md, fixed Hyrpland main config new version, fixed wallpaper 2 wrong files, fixed fastfetch config :3)
 
 ---
 
