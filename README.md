@@ -2,52 +2,90 @@
 
 ![Fi3w0-Hyprland Banner](assets/preview.png)
 
+> Arch Linux · Hyprland · Terminal-First · Daily Driver
 
-
-This is **my personal Arch Linux + Hyprland configuration**.  
-The main purpose of this repository is to **backup my system**, because honestly, I’m still learning to use Linux.
-
-⚠️ **Disclaimer:**  
-You’re free to browse or experiment with these dotfiles, but I don’t recommend using them on your system directly—they’re tailored to my setup and may break yours.
+My personal Hyprland dotfiles — built from scratch on bare Arch Linux with zero prior Linux experience. No KDE, no GNOME, no training wheels. Configured everything from the ground up in two weeks and have been running it as my daily driver for 6+ months.
 
 ---
 
-## What’s inside?
-- Hyprland configuration files
-- Waybar, Rofi, Fish shell setups
-- Wallpapers and assets
-- Random experimental tweaks
-- Some themes scripts for Nvim or Waybar
+## System
+
+| | |
+|---|---|
+| **OS** | Arch Linux x86_64 |
+| **Kernel** | Linux 6.18.9-arch1-2 |
+| **WM** | Hyprland 0.54.1 (Wayland) |
+| **Machine** | ThinkPad T14 Gen 1 — AMD Ryzen 5 PRO 4650U |
+| **Shell** | Fish 4.5.0 |
+| **Terminal** | Kitty 0.45.0 |
+| **Uptime** | 170 days and counting |
+
+---
+
+## Screenshots
+
+![Desktop](assets/arch.png)
+![Desktop](assets/photo2.png)
+![Notifications](assets/notification.png)
+
+---
+
+## What's Inside
+
+| Component | Tool |
+|---|---|
+| **Window Manager** | Hyprland |
+| **Bar** | Waybar |
+| **Launcher** | Rofi |
+| **Shell** | Fish |
+| **Terminal** | Kitty |
+| **Editor** | Neovim |
+| **Notifications** | SwayNC |
+| **Wallpaper** | Hyprpaper / swww |
+| **Lock Screen** | Hyprlock |
+| **Audio** | PulseAudio · Cava · Pavucontrol |
+| **File Manager** | Nautilus / Ranger |
+| **Browser** | Firefox |
+| **Image Viewer** | imv |
+| **System Info** | Fastfetch |
+| **Monitoring** | Htop · Gtop |
+| **Packages** | Pacman (762) · Flatpak (29) |
+
+---
+
+## Features
+
+- Screenshot with SwayNC notification and auto copy to clipboard
+- Custom Hyprpaper wallpaper script
+- Neovim and Waybar theming scripts
+- Custom Fastfetch config
+- Lean setup — no bloat, everything has a purpose
 
 ---
 
 ## Usage
 
-Clone this repository:
+Clone the repo and copy configs to `~/.config/`:
 
 ```bash
 git clone https://github.com/fi3w0/Fi3w0-Hyprland.git
+cd Fi3w0-Hyprland
 
-Then copy the configuration files to your user config directory (~/.config/) so they are picked up by your system:
-
-cp -r Fi3w0-Hyprland/hyprland ~/.config/
-cp -r Fi3w0-Hyprland/waybar ~/.config/
-cp -r Fi3w0-Hyprland/rofi ~/.config/
-cp -r Fi3w0-Hyprland/fish ~/.config/
-cp -r Fi3w0-Hyprland/nvim ~/.config/
-cp -r Fi3w0-Hyprland/Wallpapers ~/home/
-cp -r Fi3w0-Hyprland/.icons ~/home/
-
-For assets, copy them to your Pictures or config folder (or just delete):
-
-mkdir -p ~/Pictures
-cp -r Fi3w0-Hyprland/assets ~/.config/
-
-    ⚠️ Important: These configuration files are specifically tailored for my system and setup.
-    You may need to adjust paths, keybindings, or other settings to make them work properly on your own system.
+cp -r hypr ~/.config/
+cp -r waybar ~/.config/
+cp -r rofi ~/.config/
+cp -r fish ~/.config/
+cp -r nvim ~/.config/
+cp -r swaync ~/.config/
+cp -r .icons ~/
 ```
 
+For wallpapers:
+```bash
+cp -r wallpapers ~/Pictures/
+```
 
+<<<<<<< HEAD
 
 Here’s a quick glance at the main applications I use in this setup:
 
@@ -93,5 +131,19 @@ Here’s a quick glance at the main applications I use in this setup:
 License
 
 This repository is for personal use. You may explore or adapt it at your own risk.
+=======
+> **Note:** These configs are tailored to my hardware and workflow. You'll likely need to adjust monitor settings, keybindings, and paths. Read through `hypr/hyprland.conf` before applying anything.
+>>>>>>> 8010a9b (Updated README.md, fixed Hyrpland main config new version, fixed wallpaper 2 wrong files, fixed fastfetch config :3)
 
 ---
+
+## Notes
+
+- SwayNC works but can be temperamental depending on your setup — optional if you don't need a notification center
+- This repo also serves as my system backup — commit history reflects real changes to my daily environment
+
+---
+
+## License
+
+MIT — explore, adapt, break things. That's how I learned too.

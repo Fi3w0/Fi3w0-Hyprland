@@ -81,7 +81,7 @@ fastfetch
 
 # --- Apps / GUI tools ---
 firefox
-thunar
+ranger
 nautilus
 ark
 smplayer
