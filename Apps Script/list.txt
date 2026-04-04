@@ -96,7 +96,7 @@ slurp
 grim
 kitty
 sddm
-# swww
+# swww/awww
 
 # --- Fonts ---
 ttf-dejavu

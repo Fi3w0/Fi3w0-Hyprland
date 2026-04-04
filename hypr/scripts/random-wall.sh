@@ -9,8 +9,8 @@ touch "$COOLDOWN"
 DIR="/home/fiw/wallpapers"
 FILE=$(find "$DIR" -type f | shuf -n 1)
 
-# Animation
-swww img "$FILE" \
+# Animation - Updated swww to awww
+awww img "$FILE" \
     --transition-type outer \
     --transition-step 200 \
     --transition-fps 60 \
@@ -20,4 +20,3 @@ swww img "$FILE" \
 #Wait 1.5s for cooldown to work
 sleep 1.5
 rm "$COOLDOWN"
-
