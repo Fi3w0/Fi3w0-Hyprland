@@ -4,7 +4,7 @@
 
 set -euo pipefail
 
-LIST_PATH="/home/fiw/dotfiles/Fi3w0-Hyrpland/Apps Script/list.txt"
+LIST_PATH="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)/list.txt"
 
 echo "🚀 Starting app installation..."
 

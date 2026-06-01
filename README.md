@@ -13,12 +13,12 @@ My personal Hyprland dotfiles — built from scratch on bare Arch Linux with zer
 | | |
 |---|---|
 | **OS** | Arch Linux x86_64 |
-| **Kernel** | Linux 6.18.9-arch1-2 |
+| **Kernel** | Linux 7.0.3-arch1-2 |
 | **WM** | Hyprland 0.54.1 (Wayland) |
 | **Machine** | ThinkPad T14 Gen 1 — AMD Ryzen 5 PRO 4650U |
 | **Shell** | Fish 4.5.0 |
 | **Terminal** | Kitty 0.45.0 |
-| **Uptime** | 169 days and counting |
+| **Uptime** | 257 days and counting |
 
 ---
 
@@ -77,6 +77,7 @@ cp -r rofi ~/.config/
 cp -r fish ~/.config/
 cp -r nvim ~/.config/
 cp -r swaync ~/.config/
+cp -r kitty ~/.config/
 cp -r .icons ~/
 ```
 
